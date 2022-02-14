@@ -20,9 +20,20 @@ public class Program {
 		System.out.println("Quantidade: ");
 		produto.quantidade = sc.nextInt();
 		
-		System.out.println(produto.toString());
+		System.out.println("Quantidade no estoque." + produto.toString());
+		
+		System.out.println("Adicione produtos ao estoque: ");
+		int quantidade = sc.nextInt();
+		produto.addProdutos(quantidade);
+		
+		System.out.println("Atualização do estoque." + produto.toString());
+		
+		System.out.println("Remova produtos ao estoque: ");
+		quantidade = sc.nextInt();
+		produto.removerProdutos(quantidade);
+		
+		System.out.println("Atualização do estoque." + produto.toString());
 		
 		sc.close();
 	}
-
 }
