@@ -13,9 +13,14 @@ public class Program {
 		
 		Produto produto = new Produto();
 		
+		System.out.println("Nome: ");
+		produto.nome = sc.nextLine();
+		System.out.println("Preço: ");
+		produto.preco = sc.nextDouble();
+		System.out.println("Quantidade: ");
+		produto.quantidade = sc.nextInt();
 		
-		
-		
+		System.out.println(produto.toString());
 		
 		sc.close();
 	}

@@ -2,7 +2,7 @@ package entities;
 
 public class Produto {
 	
-	public String name;
+	public String nome;
 	public double preco;
 	public int quantidade;
 	
@@ -16,6 +16,10 @@ public class Produto {
 	
 	public void removerProdutos(int saidaDeQuantidade) {
 		quantidade -= saidaDeQuantidade;
+	}
+	
+	public String toString() {
+		return nome +", $ " + preco + ", TOTAL: $" + totalValorEstoque();
 	}
 
 }
