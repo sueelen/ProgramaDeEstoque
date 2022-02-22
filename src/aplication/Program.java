@@ -11,14 +11,14 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Produto produto = new Produto();
-		
 		System.out.println("Nome: ");
-		produto.nome = sc.nextLine();
+		String nome = sc.nextLine();
 		System.out.println("Preço: ");
-		produto.preco = sc.nextDouble();
+		double preco = sc.nextDouble();
 		System.out.println("Quantidade: ");
-		produto.quantidade = sc.nextInt();
+		int quantidade = sc.nextInt();
+		
+		Produto produto = new Produto(nome, preco, quantidade);
 		
 		System.out.println("Quantidade no estoque." + produto.toString());
 		
