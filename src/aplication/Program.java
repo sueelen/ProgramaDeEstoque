@@ -23,7 +23,7 @@ public class Program {
 		System.out.println("Quantidade no estoque." + produto.toString());
 		
 		System.out.println("Adicione produtos ao estoque: ");
-		int quantidade = sc.nextInt();
+		quantidade = sc.nextInt();
 		produto.addProdutos(quantidade);
 		
 		System.out.println("Atualização do estoque." + produto.toString());
