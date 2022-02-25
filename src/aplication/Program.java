@@ -15,24 +15,22 @@ public class Program {
 		String nome = sc.nextLine();
 		System.out.println("Preço: ");
 		double preco = sc.nextDouble();
-		System.out.println("Quantidade: ");
-		int quantidade = sc.nextInt();
 		
-		Produto produto = new Produto(nome, preco, quantidade);
+		Produto produto = new Produto(nome, preco);
 		
-		System.out.println("Quantidade no estoque." + produto.toString());
+		System.out.println("DADOS: " + produto.toString());
 		
 		System.out.println("Adicione produtos ao estoque: ");
-		quantidade = sc.nextInt();
+		int quantidade = sc.nextInt();
 		produto.addProdutos(quantidade);
 		
-		System.out.println("Atualização do estoque." + produto.toString());
+		System.out.println("Atualização do estoque: " + produto.toString());
 		
 		System.out.println("Remova produtos ao estoque: ");
 		quantidade = sc.nextInt();
 		produto.removerProdutos(quantidade);
 		
-		System.out.println("Atualização do estoque." + produto.toString());
+		System.out.println("Atualização do estoque: " + produto.toString());
 		
 		sc.close();
 	}
